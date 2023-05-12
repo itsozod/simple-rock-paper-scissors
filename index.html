@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+
+     <!-- Font awesome kit -->
+     <script src="https://kit.fontawesome.com/d1ffe73f18.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">Rock Paper Scissors</header>
+    <h1>Man vs Computer</h1>
+    <p class="weapon">Choose your weapon!!!</p>
+    <!-- <div id="name-holder">
+    <input type="text" id="nameInput" placeholder="Enter your name here">
+    <button class="update" onclick="updateName()">Update Name</button>
+</div> -->
+    <main id="main">
+    <div id="gameDiv">
+        <div id="button-container">
+            <div class="sign" id="rock">
+                <button class="btn">✊</button>
+            </div>
+            <div class="sign" id="paper">
+                <button class="btn">✋</button>
+            </div>
+            <div class="sign" id="scissors">
+                <button class="btn">✌️</button>
+            </div>
+        </div>
+    </div>
+    <div class="restartContainer">
+        <button id="restartBtn">Restart</button>
+    </div>
+    <div class="choices">
+            <p id="playerText">Player: ?</p>
+            <p id="computerText">Computer: ?</p>
+        </div>
+        <p id="resultText">Result: ?</p>
+        <div id="score-container">
+            <div id="playerscore">0</div>
+            <div id="computerscore">0</div>
+        </div>
+</main>
+<footer class="footer">
+    <p>Copyright © <span id="current-year"></span> itsozod</p>
+    <a href="https://github.com/itsozod" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

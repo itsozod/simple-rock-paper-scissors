@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: bisque;
+    font-family: 'Castoro Titling', cursive;
+    font-weight: 600;
+}
+.header {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-color: brown;
+    height: 50px;
+    line-height: 50px;
+    box-shadow: inset 0px -10px 10px -10px rgba(0, 0, 0, 0.5);
+}
+h1 {
+    margin-top: 40px;
+    text-align: center;
+}
+.weapon {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
+}
+/* Game div */
+
+#gameDiv {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    width: 160px;
+    height: 160px;
+    border: 2px solid lightpink;
+    background-color: lightskyblue;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px red;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.btn {
+    font-size: 100px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.sign:hover {
+    opacity: 0.7;
+    box-shadow: none;
+}
+.choices {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.restartContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#restartBtn {
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#restartBtn:hover:not(.restartBtn-disabled){
+    background-color: brown;
+}
+.restartBtn-disabled {
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    border-radius: 6px;
+    opacity: 0.5;
+}
+#playerText, #computerText {
+    font-size: 25px;
+    margin: 30px;
+}
+#resultText {
+    font-size: 25px;
+    text-align: center;
+}
+#score-container {
+    display: flex;
+    justify-content: center;
+}
+#playerscore, #computerscore {
+    font-size: 25px;
+    margin: 30px;
+}
+
+/* Update name input used in another rock, paper, scissors game on my github page */
+
+/* #name-holder {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#nameInput, .update {
+    padding: 10px;
+    margin: 10px;
+}
+#nameInput {
+    background-color: lightgreen;
+    border: 2px solid white;
+    outline: none;
+    box-shadow: 2px 2px 5px black;
+}
+.update {
+    background-color: brown;
+    border: 2px solid pink;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px pink;
+    color: white;
+}
+.update:hover {
+    opacity: 0.9;
+}
+#nameInput::placeholder {
+    color: black;
+} */
+
+ /* FOOTER */
+ .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    color: #ddd;
+    font-size: 20px;
+    background-color: black;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  .fa-github {
+    color: #ddd;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+  }
+/* Media queries */
+@media screen and (max-width: 472px) {
+    .sign {
+        width: 150px;
+        height: 120px;
+    }
+    .btn {
+        font-size: 60px;
+    }
+    
+}
+@media screen and (max-width: 405px) {
+    .sign {
+        width: 140px;
+        height: 110px;
+    }
+    .btn {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 450px) {
+    #playerText, #computerText, #playerscore, #computerscore {
+        font-size: 19px;
+    }
+    #resultText {
+    font-size: 21px;
+    }
+    .header {
+        font-size: 27px;
+    }
+    h1, .weapon {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 367px) {
+    #playerText, #computerText, #playerscore, #computerscore {
+        font-size: 16px;
+    }
+    #resultText {
+        font-size: 16px;
+    }
+    .header {
+        font-size: 25px;
+    }
+    h1, .weapon {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 349px) {
+    .header {
+        font-size: 15px;
+    }
+    h1, .weapon {
+        font-size: 17px;
+    }
+    #playerText, #computerText, #playerscore, #computerscore, #resultText {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 317px) {
+    #playerText, #computerText, #resultText, #playerscore, #computerscore {
+        font-size: 12px;
+    }
+}
