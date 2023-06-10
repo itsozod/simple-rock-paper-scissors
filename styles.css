@@ -26,6 +26,9 @@ h1 {
     font-size: 25px;
     margin-top: 50px;
 }
+#main {
+    height: 100vh;
+}
 /* Game div */
 
 #gameDiv {
